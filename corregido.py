@@ -7,11 +7,11 @@ def correr_juego():
     #Inicializar el juego, las configuraciones y crear un objeto pantalla
     pygame.init()
     configuraciones=Configuraciones()
-    # Carga el sonido
+    """ # Carga el sonido
     sonido = pygame.mixer.Sound("sonido/fondo.wav")
     # Reproduce el sonido en un bucle
     sonido.play(loops=-1)
-    sonido.set_volume(0.1)
+    sonido.set_volume(0.1) """
     # Crear pantalla y asignarle un tamaño
     pantalla=pygame.display.set_mode((configuraciones.ancho_pantalla,configuraciones.alto_pantalla))
     # Poner titulo a la pantalla
