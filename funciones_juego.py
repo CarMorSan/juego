@@ -16,7 +16,10 @@ def verificar_eventos_keydown(event,configuraciones,pantalla, nave, balas):
         #Crea una nueva balaa y la agrega al grupo de balas
         nueva_bala=Bala(configuraciones,pantalla,nave)
         balas.add(nueva_bala)
-        
+        # Reproducir sonido de disparo
+        sonido = pygame.mixer.Sound("sonido/disparo.wav")
+        sonido.set_volume(0.03)
+        sonido.play()
         
 def verificar_eventos_keyup(event,nave):
     if event.key==pygame.K_d:
