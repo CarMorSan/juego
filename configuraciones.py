@@ -16,4 +16,9 @@ class Configuraciones():
             y=random.randint(0,self.alto_pantalla)
             self.coor_list.append([x,y])
 
+        #Configuraciones de balas
+        self.velocidad_bala=10
+        self.ancho_bala=30
+        self.alto_bala=6
+        self.color_bala=198, 142, 255
         
